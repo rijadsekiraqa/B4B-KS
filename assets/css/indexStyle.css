@@ -1,0 +1,78 @@
+/* Thirr tani buttoni */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(100, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(100, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(100, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(100, 0, 0, 0);
+  }
+}
+
+.example-1
+{
+  margin: 20px;
+  width: 75px;
+  height: 75px;
+  font: 14px/75px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  background-color: #7cbd1e;
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+  font-weight:bold;
+
+}
+
+.wrapper{
+    position: fixed;
+    /* left: 0; */
+    top: 0;
+    z-index: 9;
+    right: 0;
+    top:80%;
+}
+
+@media screen and (max-width:500px){
+    .example-1{
+        width:70px;
+        height:70px;
+        font: 12px/75px 'Barlow Semi Condensed', sans-serif;
+        letter-spacing: 1px;
+    }
+    .wrapper{
+        top:35%;
+    }
+}
+/* Logo */
+#logo a{
+  transition: transform .2s;
+}
+
+#logo a:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+/* Kategori right button */
+.property-entry a span{
+  right: 0;
+    position: absolute;
+    float: right;
+    z-index: 999999;
+    margin: 10px;
+}
