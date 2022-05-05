@@ -1,1 +1,1 @@
-# B4B-KS
+This project enables the registration of businesses by categories and cities through an admin panel.Businesses registered in the admin panel can be listed in index.php through two fields category and city.
